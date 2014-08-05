@@ -2,11 +2,11 @@
 
 from sys import stdin
 
-remove_new_lines = True
-split_by_char = True
-speicial_character = "#"
+remove_new_lines       = True
+split_by_char          = True
+special_character      = "#"
 remove_empty_last_cell = True
-remove_all_empty = True
+remove_all_empty       = True
 
 def get_rid_of_newlines(str1):
 	return str1[0:-1]
@@ -14,7 +14,7 @@ def get_rid_of_newlines(str1):
 def split_by_special_char(str_arr):
 	accum = [[]]
 	for str1 in str_arr:
-		if str1 == speicial_character:
+		if str1 == special_character:
 			accum.append([])
 		else:
 			if remove_all_empty and str1=="":
